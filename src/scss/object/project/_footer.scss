@@ -1,41 +1,44 @@
-.footer-text {
-  &__uparrow {
-    position: absolute;
-    top: -30px;
-    right: 10%;
-    font-size: 18px;
-    i {
-      padding: 20px;
-      color: $colorOrange;
-      border-radius: 10px;
-      background-color: white;
-    }
+.footer-text{
+  .footer-text__uparrow{
+   position: absolute;
+   top: -30px;
+   right: 10%;
+   font-size: 18px;
+   i{
+       padding: 20px;
+       color: $colorOrange;
+       border-radius: 10px;
+       background-color: white;
+   }
   }
-  padding: 97px 213px 66px 189px;
-  @include for-tablet {
-    padding: 100px 20px 0 20px;
-  }
-  @include for-phone {
-    padding: 100px 20px 0 20px;
-  }
+padding: 97px 213px 66px 189px;
+   @include for-tablet{
+   padding: 100px 20px 0 20px;
 
-  color: $colorBlack;
-  border-radius: 100px 100px 0 0;
+   }
+   @include for-phone{
+   padding: 100px 20px 0 20px;
+
+   }
+
+   color: $colorBlack;
+   border-radius: 100px 100px 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 
-  @include for-phone {
-    display: flex;
-
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  &__element1 {
-    padding-right: 159px;
-    @include for-phone {
-      padding-right: 30px;
-    }
+   @include for-phone{
+       display: flex;
+      
+       flex-wrap: wrap;
+       gap: 20px;
+      
+   }
+   &__element1{
+       padding-right: 159px;
+       @include for-phone{
+           padding-right: 30px;
+       }
     &__title {
       color: $colorBlack;
       padding: 40px 0 21px 0;
