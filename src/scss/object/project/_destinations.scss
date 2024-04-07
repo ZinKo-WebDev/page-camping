@@ -1,0 +1,103 @@
+.destinations {
+   
+    text-align: center;
+  
+    &__title {
+      font-size: 18px;
+      padding: 38px 0;
+      font-size: 40px;
+      font-weight: bold;
+      color:$colorBlack;
+    }
+    &__btn{
+      padding: 60px 0;
+      
+      a{
+          color: $colorOrange;
+          border: 1px solid $colorOrange;
+          padding: 10px 40px;
+          background-color: transparent;
+          border-radius: 50px;
+      }
+    }
+  
+    &__cards {
+       
+       
+        padding: 50px 20px;
+        @include for-desktop{
+            padding: 50px 210px;
+
+
+        }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      .card-destination {
+        border-radius: 20px;
+        width: 357px;
+      
+        padding: 40px;
+        background-color: white;
+        line-height: 30px;
+  
+  
+        .card-destination-image-wrapper {
+          position: relative;
+    
+         img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+          }
+         svg {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+          }
+        p {
+            display: inline-block;
+            font-size: 18px;
+            color: $colorBlack;
+            padding: 10px;
+            background-color: white;
+    
+            position: absolute;
+            left: 50%;
+            bottom: -50px;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+            padding: 15px 38px;
+            color: $colorOrange;
+          }
+        }
+       &__title {
+          font-size: 18px;
+          color: $colorBlack;
+          padding-top: 30px;
+        }
+       &__desc {
+          font-size: 18px;
+          color: $colorBlack;
+          padding: 20px 0;
+        }
+        &__btn {
+          font-size: 18px;
+         
+          a {
+            padding: 10px 20px;
+            color: grey;
+            background-color: rgb(224, 224, 224);
+            border-radius: 50px;
+          }
+        }
+      }
+     
+  
+     
+    }
+  }
+  

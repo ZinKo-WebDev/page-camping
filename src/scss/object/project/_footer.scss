@@ -1,0 +1,109 @@
+.footer-text{
+   .footer-text__uparrow{
+    position: absolute;
+    top: -30px;
+    right: 10%;
+    font-size: 18px;
+    i{
+        padding: 20px;
+        color: $colorOrange;
+        border-radius: 10px;
+        background-color: white;
+    }
+   }
+padding: 97px 213px 66px 189px;
+    @include for-tablet{
+    padding: 100px 20px 0 20px;
+
+    }
+    @include for-phone{
+    padding: 100px 20px 0 20px;
+
+    }
+
+    color: $colorBlack;
+    border-radius: 100px 100px 0 0;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px;
+ 
+    @include for-phone{
+        display: flex;
+       
+        flex-wrap: wrap;
+        gap: 20px;
+       
+    }
+    &__element1{
+        padding-right: 159px;
+        @include for-phone{
+            padding-right: 30px;
+        }
+        &__title{
+    color: $colorBlack;
+    padding: 40px 0 21px 0;
+
+    @include for-phone{
+        width: 340px;
+    }
+    
+        }
+        &__desc{
+    color: $colorBlack;
+    line-height: 25px;
+   
+ 
+
+        
+        }
+      &__app{
+            &__text{
+    color: $colorBlack;
+            
+            }
+           &__stores{
+            }
+        }
+        
+    }
+    
+}
+
+
+.foot-ele{
+    
+    padding-right: 40px;
+    &__title{
+        font-size: 18px;
+        font-weight: bold;
+        color: $colorBlack;
+        padding:  40px 0 21px 0;
+    }
+    &__listgroup{
+
+        
+        li{
+            list-style: none;
+            font-size: 16px;
+        font-weight: 400;
+       line-height: 25px;
+
+
+        }
+    }
+   &__element5__appstores{
+   
+    img{
+      width: 147px;  
+      height: 44px;
+    }
+    }
+}
+.footer-copyright{
+    
+    padding:40px 0 66px 0;
+    &__addr{
+        text-align: center;
+       
+    }
+}

@@ -1,0 +1,37 @@
+
+.card-event{
+    padding: 60px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+ border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: $colorWhite;
+    
+    @include for-desktop{
+display: flex;
+    }
+    @include for-tablet{
+display: flex;
+    }
+    @include for-phone{
+        flex-direction: column;
+
+    }
+    .card-event__title{
+        font-size: 18px;
+        padding: 5px 0;
+        font-weight: bold;
+        color: $colorBlack;
+    }
+    .card-event__desc{
+        font-size: 16px;
+        color: $colorBlack;
+
+    }
+}
+

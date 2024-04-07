@@ -1,0 +1,26 @@
+@mixin for-phone {
+    @media (min-width: 300px) and (max-width: 600px) { @content; }
+  }
+  @mixin for-tablet {
+    @media (min-width: 601px) and (max-width: 1200px)  { @content; }
+  }
+ 
+  @mixin for-desktop {
+    @media (min-width: 1201 )and(max-width: 1900 ){ @content; }
+  }
+  
+ 
+  
+
+  @mixin styledBtn{
+    font-size: 18px;
+    background-color: transparent;
+    padding: 10px 20px;
+   color: white;
+    border-radius: 50px;
+    margin: 0 10px;
+    outline: none;
+  }
+  .active-btn{
+    border: 1px solid white;
+  }
