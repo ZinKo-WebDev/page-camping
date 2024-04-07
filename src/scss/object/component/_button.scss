@@ -1,0 +1,16 @@
+.c-auth-btn {
+  @include styledBtn;
+}
+.active {
+  border: 1px solid white;
+  border-radius: 50px;
+}
+.btn-home {
+  @include styledBtn;
+  background-color: $colorOrange;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 50px;
+}

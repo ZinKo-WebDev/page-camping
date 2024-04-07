@@ -1,5 +1,5 @@
 
-.card-event{
+.c-card-event{
     padding: 60px 40px;
 
     display: flex;
@@ -22,13 +22,13 @@ display: flex;
         flex-direction: column;
 
     }
-    .card-event__title{
+    &__title{
         font-size: 18px;
         padding: 5px 0;
         font-weight: bold;
         color: $colorBlack;
     }
-    .card-event__desc{
+    &__desc{
         font-size: 16px;
         color: $colorBlack;
 

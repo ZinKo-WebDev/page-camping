@@ -1,16 +1,6 @@
-@mixin for-phone {
-    @media (min-width: 300px) and (max-width: 600px) { @content; }
-  }
-  @mixin for-tablet {
-    @media (min-width: 601px) and (max-width: 1200px)  { @content; }
-  }
- 
-  @mixin for-desktop {
-    @media (min-width: 1201 )and(max-width: 1900 ){ @content; }
-  }
+
   
- 
-  
+
 
   @mixin styledBtn{
     font-size: 18px;
@@ -23,4 +13,52 @@
   }
   .active-btn{
     border: 1px solid white;
+  }
+  @mixin box($width, $height) {
+    width: $width;
+    height: $height;
+  }
+
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+  }
+  
+  @mixin flex-center-vert {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin flex-center-horiz {
+    display: flex;
+    justify-content: center;
+  }
+  @mixin cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @mixin fade($type) {
+    @if $type== "hide" {
+     display: none;
+     
+    } @else if $type== "show" {
+      display: block;
+   
+    } @else if $type== "flex" {
+      display: flex;
+     
+    }
   }

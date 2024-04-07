@@ -1,99 +1,73 @@
-.header-inner {
+.nav {
   width: 100%;
-  padding: 30px 0;
+  padding: 0 201px;
+  @include for-phone {
+    padding: 0 20px;
+  }
+  @include for-tablet {
+    padding: 0 50px;
+  }
 
-  position: fixed;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .nav-left {
+    @include flex-center;
 
-  .nav {
-    width: 100%;
-    padding: 0 201px;
-    @include for-phone {
-      padding: 0 20px;
-    }
-    @include for-tablet {
-      padding: 0 50px;
-    }
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .nav-left {
+    &__pages {
       display: flex;
-      justify-content: center;
-      align-items: center;
-    
-      &__pages {
-        display: flex;
-        justify-content: start;
-        flex-wrap: wrap;
-        gap: 5px;
-        @include for-phone{
-            display: none; 
-        }
-       
-        li {
-          list-style: none;
-          a{
-            padding: 5px 10px;
-            margin: 10px 5px;
-          }
-        }
-      }
-    }
-    .nav-right{
-      &__auth {
-        display: flex;
-        justify-content: end;
-        flex-wrap: wrap;
-        @include for-phone{
-            display: none; 
-        }
-        @include for-tablet{
-            display: none;
-        }
-        li {
-          list-style: none;
-
-          a{
-            padding:  10px;
-           
-
-          }
-        }
-      }
-      &__menu {
+      justify-content: start;
+      flex-wrap: wrap;
+      gap: 5px;
+      @include for-phone {
         display: none;
-        @include for-phone {
-          display: block;
-        }
-        @include for-tablet{
-          display: block;
       }
 
-        i {
-          font-size: 25px;
-          color: $colorOrange;
-
-          padding: 10px;
-          background-color: $colorWhite;
-          border-radius: 15px;
+      li {
+        list-style: none;
+        a {
+          padding: 5px 10px;
+          margin: 10px 5px;
         }
       }
     }
   }
-}
-.auth-btn{
-   
-    margin: 0 5px;
-    padding: 13px 38px;
-   
-    background: transparent;
-}
-.active{
-    border: 1px solid white;
-    border-radius: 50px;
+  .nav-right {
+    &__auth {
+      display: flex;
+      justify-content: end;
+      flex-wrap: wrap;
+      @include for-phone {
+        display: none;
+      }
+      @include for-tablet {
+        display: none;
+      }
+      li {
+        list-style: none;
+
+        a {
+          padding: 10px;
+        }
+      }
+    }
+    &__menu {
+      @include fade(hide);
+      @include for-phone {
+        @include fade(show);
+      }
+      @include for-tablet {
+        @include fade(show);
+      }
+
+      i {
+        font-size: 25px;
+        color: $colorOrange;
+
+        padding: 10px;
+        background-color: $colorWhite;
+        border-radius: 15px;
+      }
+    }
+  }
 }

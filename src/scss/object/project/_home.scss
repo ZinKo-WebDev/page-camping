@@ -1,9 +1,7 @@
 .home{
    
     background: url("/src/img/mainvisual_bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   @include cover-background;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,22 +17,20 @@
         font-size: 45px;
     }
     &__desc{
+        @include for-desktop{
+            max-width: 528px;
+
+        }
+        @include for-tablet{
+            max-width: 528px;
+
+        }
+        
         font-size: 18px;
         padding-bottom: 20px;
         line-height: 30px
     }
-    &__btn{
-       
-        @include styledBtn;
-       
-        background-color: $colorOrange;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        display: inline-block;
-        padding: 10px 50px;
-
-    }
+   
     }
     
 }

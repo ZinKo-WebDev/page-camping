@@ -3,17 +3,17 @@
 @import "./foundation/variables";
 @import "./foundation/colors";
 @import "./foundation/fonts";
+@import "./layout/responsive";
 @import "./foundation/reset";
 @import "./foundation/base";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/layout";
 @import "./layout/sidebar";
-@import "./layout/responsive";
 @import "./object/component/button";
 @import "./object/component/card-event";
 @import "./object/component/icon";
-@import "./object/component/label";
+
 @import "./object/project/page";
 @import "./object/project/post";
 @import "./object/project/destinations";
